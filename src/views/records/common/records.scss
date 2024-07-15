@@ -1,0 +1,93 @@
+// 记录页公共样式
+
+.page_record {
+    padding: 0 10px;
+    user-select: none;
+    flex: 1;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    .search_box {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+        .search_item {
+            width: 172px;
+            height: 48px;
+            border-radius: 5px;
+            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.39), 0 2px 2px 0 rgba(0, 0, 0, 0.34), 0 5px 3px 0 rgba(0, 0, 0, 0.2), 0 8px 3px 0 rgba(0, 0, 0, 0.06), 0 13px 3px 0 rgba(0, 0, 0, 0.01);
+            background-image: radial-gradient(#4c36b3 0%, #3a2786 100%, #3c279a 25%);
+        }
+        .search_item_mini {
+            width: 112px;
+        }
+    }
+    
+    .table {
+        border-radius: 8px;
+        overflow: hidden;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        .main_content {
+            flex: 1;
+            overflow-y: auto;
+        }
+        .th {
+            min-height: 42px;
+            box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.39), 0 2px 2px 0 rgba(0, 0, 0, 0.34), 0 5px 3px 0 rgba(0, 0, 0, 0.2), 0 8px 3px 0 rgba(0, 0, 0, 0.06), 0 13px 3px 0 rgba(0, 0, 0, 0.01);
+            background-image: radial-gradient(#4c36b3 0%, #3a2786 100%, #3c279a 25%);
+            display: flex;
+            align-items: center;
+            .td {
+                font-size: 10px;
+                color: #fff;
+            }
+            .line {
+                background-image: linear-gradient(to bottom, #505764 0%, #c8ccd2 50%, #434854 100%);
+                width: 1px;
+                height: 28px;
+                opacity: 0.3;
+            }
+        }
+        .tr {
+            display: flex;
+            align-items: stretch;
+            min-height: 36px;
+            font-size: 10px;
+            .line {
+                background-color: rgba(135, 161, 206, 0.2);
+                width: 1px;
+                height: 100%;
+                min-height: 36px;
+            }
+            &:nth-child(even) {
+                background-color: #27155c;
+                color: #87a1ce;
+            }
+            &:nth-child(odd) {
+                background-color: #2F1D7D;
+                color: #fff;
+            }
+        }
+        .td {
+            flex: 10;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            flex-shrink: 0;
+        }
+        .td-s {
+            flex: 10;
+        }
+        .td-m {
+            flex: 12.5;
+        }
+        .td-x {
+            flex: 15;
+        }
+    }
+}

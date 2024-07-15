@@ -1,0 +1,126 @@
+form {
+  --nut-form-item-label-font-size: 12px;
+
+  :deep(.nut-cell-group__wrap) {
+    box-shadow: none;
+    background: none;
+    margin: 0;
+
+    .nut-cell {
+      background: none;
+      padding: 0;
+      margin-bottom: 14px;
+
+      &::after {
+        border: none;
+      }
+
+      &.nut-form-item {
+
+        .nut-input,
+        select {
+          width: 100%;
+          background: #1d0e4a;
+          border: 1px solid #322c59;
+          border-radius: 8px;
+          padding: 9px 8px;
+        }
+
+      }
+    }
+  }
+
+  .label {
+    display: flex;
+
+    p {
+      white-space: nowrap;
+      font-size: 12px;
+      color: #c0c2db;
+    }
+  }
+
+  .label-capital {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .switch-password {
+      width: 36px;
+      height: 16px;
+    }
+  }
+
+  .change-bank {
+    display: flex;
+    align-items: center;
+
+    .selectBank {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      //justify-content: center;
+      width: 195px;
+      height: 39px;
+      border-radius: 8px;
+      border: 1px solid rgba(50, 44, 89, 1);
+      background-color: rgba(29, 14, 74, 1);
+      margin-right: 12px;
+
+      .bankName {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90px;
+        height: 28px;
+        margin-right: 8px;
+        margin-left: 8px;
+        border-radius: 6px;
+        background-image: radial-gradient(circle at 50% 14%, #4c36b3 0%, #3a2786 38%, #3c279a 51%);
+
+        .icon {
+          width: 18px;
+          height: 18px;
+          margin-right: 5px;
+          background-color: #fff;
+
+          img {
+            width: 18px;
+            height: 18px;
+          }
+        }
+
+        span {
+          width: calc(110px - 18px);
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          overflow: hidden;
+        }
+      }
+
+      .mantissa {
+        font-size: 14px;
+
+      }
+    }
+  }
+
+}
+
+.change_btn {
+  display: inline-block;
+  text-align: center;
+  color: #fff;
+  background: url('/imgs/payment/go-btn.webp') 40% 85% no-repeat;
+  border: none;
+  background-size: 100%;
+}
+
+.change_btn:active {
+
+  color: #fff;
+  border: none;
+  background: url('/imgs/payment/go-btn.webp') 40% 85% no-repeat;
+  background-size: 100%;
+}

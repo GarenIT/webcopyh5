@@ -1,0 +1,21 @@
+export default {
+  route_page_activity: '活动',
+  route_page_activityDetail: '活动详情',
+  route_page_me: '我的',
+  route_page_rechargeRecord: '充值记录',
+  route_page_withdrawRecord: '取款记录',
+  route_page_betRecord: '投注记录',
+  route_page_accountRecord: '账变记录',
+  route_page_auditRecord: '流水记录',
+  route_page_washRecord: '洗码记录',
+  route_page_vip: 'VIP',
+  route_page_deposit: '充值',
+  route_page_wallet: '提款',
+  route_page_securitySettings: '安全设置',
+  route_page_email: '邮箱',
+  route_page_vipLevel: '会员等级规则',
+  route_page_discounts: '优惠',
+  route_page_agencyCooperation: '代理合作',
+  route_page_accountingChange: '账变记录',
+  route_page_agentIntroduction: '代理合作'
+}

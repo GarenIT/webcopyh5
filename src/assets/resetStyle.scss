@@ -1,0 +1,263 @@
+body {
+    font-size: 14px;
+    color: #8e82c2;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-image: radial-gradient(circle at 50% 11%, #361e79, #202137 97%);
+}
+
+body,
+div,
+span,
+a,
+p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+input {
+
+    &:-webkit-autofill,
+    textarea:-webkit-autofill,
+    select:-webkit-autofill {
+        -webkit-text-fill-color: #fff !important;
+        -webkit-box-shadow: 0 0 0px 1000px #0e0529 inset !important;
+        background-color: #0e0529;
+        background-image: none;
+        transition: background-color 50000s ease-in-out 0s;
+    }
+
+    color: #fff;
+}
+
+input::placeholder,
+select {
+    color: #87a1ce;
+
+    &:focus-visible {
+        border: 0;
+    }
+}
+
+// 修改ui框架默认样式
+:root {
+    --nut-cell-group-background-color: transparen;
+    --nut-button-default-bg-color: transparen;
+    --nut-cell-background: transparen;
+    --nut-cell-padding: 10px 0;
+    --nut-cell-color: #c0c2db;
+    --nut-tabbar-height: 84px;
+    --nut-tabs-titles-item-color: #8e82c2;
+    --nut-tabs-titles-item-active-color: #fff;
+    --nut-tabs-horizontal-titles-item-active-line-width: 0;
+}
+
+.nut-cell {
+    padding: 4px 0 !important;
+}
+
+.nut-popover .nut-popover-content {
+    box-shadow: none;
+}
+
+.nut-menu {
+    width: 131px;
+
+    // border-radius: 5px;
+
+    .nut-menu__bar {
+        background: radial-gradient(87.04% 93.77% at 50% 13.97%, #4C36B3 0.17%, #3A2786 74.42%, #3C279A 100%) !important;
+        line-height: normal !important;
+        border-radius: 5px;
+
+        .nut-menu__item {
+            color: #fff !important;
+
+            .nut-menu__title-icon {
+                padding-right: 5px;
+            }
+        }
+
+        .nut-menu__title {
+            height: 24px;
+            justify-content: space-between !important;
+        }
+    }
+}
+
+.nut-navbar {
+    width: 355px;
+    height: 45px;
+    margin: 0 auto 10px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 900;
+    border-radius: 12px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.39), 0 2px 2px 0 rgba(0, 0, 0, 0.34), 0 5px 3px 0 rgba(0, 0, 0, 0.2), 0 8px 3px 0 rgba(0, 0, 0, 0.06), 0 13px 3px 0 rgba(0, 0, 0, 0.01);
+    background-image: radial-gradient(farthest-corner at 50% 8%, #4c36b3 0%, #3a2786 50%, #3c279a 100%)
+}
+
+.nut-tabs .nut-tabs__titles {
+    padding: 5px;
+    border-radius: 14px !important;
+    box-shadow: inset 0 -6px 6px 0 #5e42dd, 0 4px 4px 0 rgba(22, 17, 46, 0.3), inset 0 6px 6px 0 #1f1548 !important;
+    border: 2.5px solid transparent !important;
+
+    background-clip: padding-box, border-box !important;
+    background-origin: padding-box, border-box !important;
+    background-image: linear-gradient(to bottom, #4017a8 100%, #8256f2 0%), linear-gradient(180deg, #4017a8, #8256f2) !important;
+    margin-bottom: 15px;
+
+    .nut-tabs__titles-item {
+        font-weight: bold;
+
+        &.active {
+            box-shadow: 0 2px 4px 0 #241760;
+            border-image: url('/imgs/btn/inlineBtn.webp') 0 25 0 25 fill / 0px 16px stretch stretch;
+
+            border-radius: 12px !important;
+            color: #fff;
+
+            .nut-tabs__titles-item__line {
+                width: 0;
+            }
+        }
+    }
+}
+
+.nut-button--primary {
+    background: none !important;
+}
+
+.nut-tab-pane {
+    padding: 0 !important;
+    background-color: transparent !important;
+}
+
+.nut-navbar__left {
+    padding: 0 6px;
+}
+
+.nut-tabs .nut-tabs__titles .nut-navbar {
+    width: 355px;
+    height: 45px;
+    margin: 0 auto 10px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 900;
+    border-radius: 12px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.39), 0 2px 2px 0 rgba(0, 0, 0, 0.34), 0 5px 3px 0 rgba(0, 0, 0, 0.2), 0 8px 3px 0 rgba(0, 0, 0, 0.06), 0 13px 3px 0 rgba(0, 0, 0, 0.01);
+    background-image: radial-gradient(#4c36b3 0%, #3a2786 100%, #3c279a 25%);
+
+}
+
+
+
+
+
+
+// 公共样式
+.btn_block {
+    border-image: url('/imgs/btn/blockBtn.webp') 0 30 0 30 fill / 0px 15px stretch stretch !important;
+    box-shadow: 0 2px 4px 0 #241760;
+    border-radius: 12px !important;
+}
+
+.btn_inline,
+.nut-button--primary {
+    border-image: url('/imgs/btn/inlineBtn.webp') 0 25 0 25 fill / 0px 16px stretch stretch !important;
+    box-shadow: 0 1px 2px 0 #241760;
+    border-radius: 12px !important;
+    color: #fff;
+}
+
+.rotation {
+    animation-duration: 1s;
+    animation-name: transform1;
+}
+
+.heart {
+    animation-duration: .5s;
+    animation-name: spring1;
+}
+
+@keyframes transform1 {
+    0% {
+        transform: perspective(400px) rotateY(0deg);
+    }
+
+    30% {
+        transform: perspective(400px) rotateY(120deg);
+    }
+
+    100% {
+        transform: perspective(400px) rotateY(720deg);
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.flashing {
+
+    animation: blink 1s infinite;
+}
+
+.flex {
+    display: flex;
+}
+
+.item_center {
+    align-items: center;
+}
+
+.space_between {
+    justify-content: space-between;
+}
+
+.justify_center {
+    justify-content: center;
+}
+
+.space_around {
+    justify-content: space-around;
+}
+
+.align_center {
+    align-items: center;
+}
+
+.f_wrap {
+    flex-wrap: wrap;
+}
+
+
+@keyframes spring1 {
+    0% {
+        transform: scale(1) translate(0, 0);
+    }
+
+    30% {
+        transform: scale(.8) translate(0, -6px);
+    }
+
+    100% {
+        transform: scale(1) translate(0, 0);
+    }
+}
