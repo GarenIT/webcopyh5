@@ -6,6 +6,7 @@ import router from './router';
 import { i18n } from '@/languages';
 import "@/assets/setEvent.ts"
 import "@/assets/resetStyle.scss"
+import "@/assets/common.scss"
 import '@/styles/index.scss'
 import '@nutui/nutui/dist/packages/notify/style/css';
 import '@nutui/nutui/dist/packages/toast/style/css';

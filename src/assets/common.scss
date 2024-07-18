@@ -1,0 +1,326 @@
+// <<<<<<<<<<
+// 颜色变量
+@white: #fff;
+@color: #4F7DF6;
+
+// >>>>>>>>>>
+.w_25 {
+	width: 25%;
+}
+.w_50 {
+	width: 50%;
+}
+.w_100 {
+	width: 100%;
+}
+.w_1200 {
+	width: 1200px;
+}
+.h_100v {
+	height: 100vh;
+}
+
+/* 背景 */
+.bg_c_white {
+	// background-color: @white;
+}
+.bg_c_orange {
+	background-color: #f0a70a;
+}
+.bg_c_gray {
+	background-color: #f3f5f8;
+}
+.bg_c_gray1 {
+	background-color: #7e8598;
+}
+.bg_c_gray2 {
+	background-color: #b5bac8;
+}
+.bg_c_gray3 {
+	background-color: #9fa8b7;
+}
+.bg_c_gray4 {
+	background-color: #e4e7ec;
+}
+.bg_c_green {
+	background-color: #2ebd85;
+}
+.bg_c_red {
+	background-color: #f6465d;
+}
+
+// 边框
+.bd_r {
+	border: 1px solid red;
+}
+.bd_r_4 {
+	border-radius: 4px;
+}
+.bd_r_10 {
+	border-radius: 10px;
+}
+.bd_r_12 {
+	border-radius: 10px;
+}
+.bd_r_20 {
+	border-radius: 20px;
+}
+.bd_r_50 {
+	border-radius: 50%;
+}
+
+.shadow {
+	box-shadow: 0 0 6px 2px #eee;
+}
+
+// padding margin
+.p_t_h {
+	padding-top: 70px;
+}
+.p_2 {
+	padding: 2px;
+}
+.p_3 {
+	padding: 3px;
+}
+.p_5 {
+	padding: 5px;
+}
+.p_6 {
+	padding: 6px;
+}
+.p_8 {
+	padding: 8px;
+}
+.p_10 {
+	padding: 10px;
+}
+.p_20 {
+	padding: 20px;
+}
+.p_30 {
+	padding: 30px;
+}
+.p_t_10 {
+	padding-top: 10px;
+}
+.p_t_20 {
+	padding-top: 20px;
+}
+.p_b_10 {
+	padding-bottom: 10px;
+}
+.p_b_20 {
+	padding-bottom: 20px;
+}
+.p_l_10 {
+	padding-left: 10px;
+}
+.p_l_20 {
+	padding-left: 20px;
+}
+.p_l_25 {
+	padding-left: 25px;
+}
+.m_l_5 {
+	margin-left: 5px;
+}
+.m_l_10 {
+	margin-left: 10px;
+}
+.m_l_20 {
+	margin-left: 20px;
+}
+.m_l_40 {
+	margin-left: 40px;
+}
+.m_r_5 {
+	margin-right: 5px;
+}
+.m_r_2 {
+	margin-right: 2px;
+}
+.m_r_10 {
+	margin-right: 10px;
+}
+.m_r_20 {
+	margin-right: 20px;
+}
+.m_r_40 {
+	margin-right: 40px;
+}
+.m_t_2 {
+	margin-top: 2px;
+}
+.m_t_4 {
+	margin-top: 4px;
+}
+.m_t_10 {
+	margin-top: 10px;
+}
+.m_t_20 {
+	margin-top: 20px;
+}
+.m_t_40 {
+	margin-top: 40px;
+}
+.m_t_80 {
+	margin-top: 80px;
+}
+.m_b_10 {
+	margin-bottom: 10px;
+}
+.m_b_20 {
+	margin-bottom: 20px;
+}
+.m_b_40 {
+	margin-bottom: 40px;
+}
+.m_b_80 {
+	margin-bottom: 80px;
+}
+
+/* 字体相关 */
+.text_center {
+	text-align: center;
+}
+
+.text_left {
+	text-align: left;
+}
+
+.f_s_12 {
+	font-size: 12px;
+}
+.f_s_14 {
+	font-size: 14px;
+}
+.f_s_16 {
+	font-size: 16px;
+}
+.f_s_18 {
+	font-size: 18px;
+}
+.f_s_22 {
+	font-size: 22px;
+}
+.f_s_24 {
+	font-size: 24px;
+}
+.f_s_28 {
+	font-size: 28px;
+}
+.f_s_32 {
+	font-size: 32px;
+}
+.f_s_40 {
+	font-size: 40px;
+}
+.f_s_50 {
+	font-size: 50px;
+}
+.f_w {
+	font-weight: bold;
+}
+.white {
+	color: #fff;
+}
+.orange {
+	color: #f0a70a;
+}
+.gray {
+	color: #9fa8b7;
+}
+.black {
+	color: #001229;
+}
+.black1 {
+	color: #141f33;
+}
+.black2 {
+	color: #0d0505;
+}
+.green {
+	color: #2ebd85;
+}
+.red {
+	color: #f6465d;
+}
+.flex {
+	display: flex;
+}
+.flex_wrap{
+    display: flex;
+    flex-wrap:wrap;
+}
+.column {
+	display: flex;
+	flex-direction: column;
+}
+.flex_center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.flex_bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+.flex_start{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.column_center {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.a_i_center {
+	align-items: center;
+}
+.j_c_center {
+	justify-content: center;
+}
+.space_between {
+	display: flex;
+	justify-content: space-between;
+}
+.space_around {
+	display: flex;
+	justify-content: space-around;
+}
+.flex_warp {
+	flex-wrap: wrap;
+}
+.p_relative {
+	position: relative;
+}
+.p_absolute {
+	position: absolute;
+}
+.pointer {
+	cursor: pointer;
+}
+.space_between_list {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.column_item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+// 居中
+.common_btn {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}

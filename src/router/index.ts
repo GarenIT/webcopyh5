@@ -15,6 +15,12 @@ const routes: RouteRecordRaw[] = [
     component: () => import('@/views/home/index.vue'),
 
   },
+//   // 游戏子列表
+{
+    path: '/gameSublist',
+    meta: { title: 'route_page_game_sublist' },
+    component: () => import('@/views/home/gameSublist.vue'),
+  },
   {
     path: '/activity',
     name: 'activity',
