@@ -14,6 +14,7 @@ import '@nutui/nutui/dist/packages/dialog/style/css';
 import shrinkOnClick from '@/directives/shrinkOnClick';
 import { Local } from './utils/storage';
 
+console.log(11111);
 
 const getSetting = async () => {
     const settingsRes = await fetch('/settings.json?' + new Date().getTime())
